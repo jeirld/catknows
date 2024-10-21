@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <!--
+    Full Name: Ruiz, Jeirold Kurt G.
+    Section: CS - 204
+    Activity: Final Output
+    Date: Oct. 14, 2024
+        -->
+        <title>CatKnows</title>
+        <meta charset = "utf-8"/>
+        <link rel = "stylesheet" href = "css/styles.css" type = "text/css" />
+        <meta name = "viewport" content = "width=device-width, initial-scale-1.0" />
+        <meta name = "description" content = "CatKnows is a website made for cat lovers, enthusiasts, fur paresnts that wants to know more about cats "/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hepta+Slab:wght@1..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel = "shortcut icon" href = "images/favicon.ico" />
+        <link rel = "icon" type = "image/png" sizes = "32x32" href = "images/favicon-32x32.png"/>
+        <link rel = "apple-touch-icon" sizes = "180x180" href = "images/apple-touch-icon.png"/>
+        <link rel = "icon" sizes = "192x192" href = "images/android-chrome-192x192.png" />
+    </head>
+
+<body>
+	<div id = "container">
+
+    <!--Mobile Nav-->
+    <nav class = "mobile-nav">
+        <div id = "menu-links">
+            <a href = "home.html">Home</a>
+            <a href = "breeds.html">Breeds</a>
+            <a href = "care.html">Care</a>
+            <a href = "gallery.html">Gallery</a>
+            <a href = "nature.html">Nature</a>
+            <a href = "contact.html">Contact</a>
+        </div>
+        <a class = "menu-icon" onclick = "hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+
+	<header id = "catknows-logo">
+		<a href = "home.html">
+			<img src = "images/ab56c3ba-f3c9-47d3-b857-17d83e97420f-removebg-preview.png" alt = "catknows Logo"/>
+		</a>	
+	</header>
+
+	<!--Tablet, Desktop Nav-->
+	<nav class = "tablet-desktop">
+		<ul>
+		<li><a href = "home.html">Home</a></li>
+		<li><a href = "breeds.html">Breeds</a></li>
+		<li><a href = "care.html">Care</a></li>  
+        <li><a href = "nature.html">Nature</a></li>  
+		<li><a href = "gallery.html">Gallery</a></li>
+        <li><a href = "contact.html">Contact</a></li>  
+		</ul>
+	</nav>
+
+	
+	<main class = "naturemain">
+
+        <!--main for tablet and desktop-->
+        
+        <div id = "tablet-desktop">
+        <h1>Cat Nature</h1>
+
+        <p>Cats are naturally curious, independent, and playful creatures with strong instincts. They enjoy exploring their environment, climbing, and observing from high places. While they are often solitary animals, they can form close bonds with their owners and other pets. Cats are known for their grooming habits, as they keep themselves clean and tidy. They also have a hunting instinct, which can be seen in their love for chasing toys or small objects. Despite their independent nature, cats appreciate affection on their own terms and can be very loyal companions.</p>
+
+        <p>Here are some videos to watch about cats:</p>
+
+        <video controls poster = "images/thumbnail 3.PNG">
+            <source src ="media/vid3.mp4" type = "video/mp4">
+            <p>Your browser does not support the video element.</p>
+        </video>
+
+        <video controls poster = "images/thumbnail 4.PNG">
+            <source src ="media/vid4.mp4" type = "video/mp4">
+            <p>Your browser does not support the video element.</p>
+        </video>
+
+        </div>
+
+    
+
+        <div id = "form">
+
+            <h1>Give us your feedback:</h1>
+            
+            <form class = "natureforms">
+                <fieldset>
+                    <label for = "feedback">Give us your feedback:</label>
+                        <textarea id = "feedback" name = "questions" row = "5" cols = "35"></textarea>
+                </fieldset>
+            </form>
+
+	</main>
+	
+    <script src = "scripts/script.js"></script>
+</body>
+
+</html>
