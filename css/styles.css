@@ -1,0 +1,735 @@
+/* CSS for Forward Fitness Club
+    Author: Ruiz, Jeirold Kurt G.
+    Section: CS-204
+    Date: September 28, 2024
+*/
+
+/*css reset*/
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, video
+        {margin: 0;
+        padding: 0;
+        border: 0;}
+
+/*css styles for body and images */
+body {background-color: #FFAE64;}
+
+img, video {max-width: 100%;
+    display: block;}
+
+video {margin: 0 auto 4%;}
+
+
+
+/* Style for BOX SIZING */
+* {
+        box-sizing: border-box;
+}
+
+
+/* Style for skip nav */
+.skip {
+        position: absolute;
+        left: 999px;
+        color: #FFAE64;
+        background-color: #fff;
+        text-decoration: none;
+        padding: 0.5%;
+        top: auto;
+        left: auto;
+        right: 1px;
+        z-index: 1;
+}
+
+
+/*STYLE RULES FOR MOBILE VIEWPORT*/
+
+/*css styles for header */
+header {
+        top: 0;
+        background-color: #FFAE64;
+        height: 150px;
+}
+
+header img {
+        margin: 0 auto;
+}
+
+
+/*css styles for hamburger menu */
+
+.mobile-nav a {
+        color: #2C2E2D;
+        font-family: "Hepta Slab", sans-serif;
+        text-align: center;
+        font-size: 2em;
+        text-decoration: none;
+        padding: 3%;
+        display: block;
+        background-color: #FFAE64;
+        
+}
+
+.mobile-nav a:hover {
+        color: #000;
+        background-color: #FFE5CD;
+        transform: scale(1.3);
+        border-radius: 10px;
+}
+
+.mobile-nav a.menu-icon {
+        display: inline-block;
+        right: 40px;
+        top: 0.0000000000056%;
+}
+      
+
+/*SHOW MOBILE CLASS, HIDE tablet-desktop class and menu links id*/
+
+.mobile {
+        display: block;
+}
+
+
+
+.tablet-desktop, .tabletdesktoponly, .desktoptabletonly {
+        display: none;
+}
+
+/*MAIN SECTION*/
+main {
+        background-color: #FFE5CD;
+        padding: 2%;    
+}
+
+main h1 {
+        font-family: "Hepta Slab", serif;
+}
+
+main p {
+        font-family: "Barlow", serif;
+}
+#intro {
+        
+        padding: 2%; 
+        text-align: center;
+        font-size: 210%;
+}
+
+#intro p {
+        text-align: justify;
+}
+
+.cartooncat {
+        padding-left: 100px;
+        height: 300px;
+}
+
+
+#form {
+        background-color: #f2f2f2;
+}
+
+.maincare h2 {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 45px;
+        font-family: "Hepta Slab", serif;
+}
+
+#careintro h1 {
+        text-align: center;
+        font-size: 50px;
+        margin-top: 20px;
+}
+
+#careintro p {
+        text-align: justify;
+        font-size: 20px;
+        margin-top: 20px;
+        padding: 4px;
+}
+
+.maincare p {
+        text-align: justify;
+        padding: 4px;
+        font-size: 20px;
+}
+
+#breedintro {
+        text-align: center;
+        padding-top: 30px;
+        font-size: 35px;
+}
+
+.allbreeds h1 {
+        text-align: center;
+        padding: 45px 0 7px 0;
+        font-size: 41 px;
+}
+
+#contact h1 {
+        text-align: center;
+        font-size: 40px; 
+        padding-top: 30px;      
+}
+
+#contact p {
+        text-align: center;
+        font-size: 25px;
+}
+
+.gallerymain h1 {
+        text-align: center;
+}
+
+
+
+.gallerymain img {
+        clear: both;
+        width: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px 30px;
+        max-height: 500px;
+        border-radius: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: #FFAE64;
+        
+}
+
+#gpic1 {
+        background-color: #FFAE64;
+}
+
+/*STYLES FOR FORM ELEMENTS*/
+fieldset {
+        border: 2px solid orange;
+        border-radius: 30px;
+        background-color: #FFAE64;
+        padding: 0 30px;
+        height: 130px
+}
+#form {
+        background-color: #FFE5CD;
+}
+
+#form h1 {
+        background-color: #FFE5CD;
+        padding-bottom: 30px;
+}
+
+form label {
+        font-family: "Barlow", serif;
+        font-weight: 500;
+}
+fieldset, input, select, textarea {
+        margin-bottom: 2%;
+        
+}
+
+fieldset legend {
+        font-weight: bold;
+        font-size: 1.25em;
+}
+
+label {
+        display: block;
+        padding-top: 3%;
+}
+
+
+form #submit {
+        margin: 0 auto;
+        display: block;
+        padding: 2%;
+        background-color: #FFE5CD;
+        font-size: 1em;
+        border-radius: 10px;
+}
+/*css styles for footer */
+
+footer p {font-size: 0.75em;
+        text-align: center;
+        color: #fff;
+        padding: 2% 4%;
+        float: left;
+        width: 75%;       
+}
+
+footer p a {color: #fff;}
+
+
+/*===================================================================================*/
+/*MEDIA QUERY FOR TABLET VIEWPORT*/
+/*TABLET VIEWPORT: SHOW TABLET-DESKTOP*/
+@media screen and (min-width: 768px), print {
+        .tablet-desktop {
+                display: block;
+        }
+        .mobile, .mobile-nav  {
+                display: none;
+        }
+
+        .desktoptabletonly{
+                display:block
+        }
+
+/*TABLET-DESKTOP VIEWPORT: STYLE RULE FOR HEADER*/
+        header {
+                position: static;
+                padding-bottom: 2%;
+        }
+
+/*TABLET-DESKTOP VIEWPORT: STYLE RULE FOR NAV AREA*/
+
+        nav {
+        padding: 1%;
+        margin-bottom: 5%;
+        margin-top: 15%;
+        }
+           
+        nav ul {list-style-type: none;
+           text-align: center;}
+
+        nav li {
+                font-size: 1.5em;
+                font-family:"Hepta Slab", serif;
+                display: inline-block;
+                border-right: 3px solid #2C2E2D;
+                
+                
+        }
+        nav li:last-child {
+                border-right: none;
+        }
+
+        nav li a {display: block;
+                color: #2C2E2D;
+                padding: 0.1em 0.60em;
+                text-decoration: none;
+                font-weight: 700;
+                
+        }
+
+        nav li a {
+                padding: 0.1em 0.75em;
+        }
+
+        nav li a:hover {
+                color: #000;
+                background-color: #FFE5CD;
+                transform: scale(1.3);
+                border-radius: 10px;
+        }
+/*TABLET-DESKTOP VIEWPORT: STYLE RULE FOR MAIN CONTENT AREA*/
+
+        .tabletdesktoponly {
+                display:block;
+        }
+ 
+   
+        #intro {
+                padding: 2%; 
+                font-size: 200%;;
+        }
+
+        .cartooncat {
+                padding-left: 280px;
+                height: 350px;
+        }
+
+        #breedintro h1 {
+                text-align: center;
+                padding-top: 40px;
+                padding-bottom: 30px;;
+                font-size: 65px;
+                font-weight: bold;
+                
+
+
+        }
+
+        .allbreeds {
+                padding-top: 20px;
+                background-color: #FFAE64;
+                border-radius: 50px;
+        }
+
+        .allbreeds h1 {
+                text-align: center;
+                padding-top: 30px;
+                font-size: 60px;
+                padding-bottom: 20px;
+        }
+
+        .allbreeds p {
+                text-align: justify;
+                font-size: 30px;
+                padding: 0 35px 20px 35px;
+                
+        }
+
+        .breedpic {
+                padding: 0 35px;
+                border-radius: 90px;
+                width: 900px;
+                
+        }
+
+        .maincare h2 {
+                font-family: "Hepta Slab", serif;
+                text-align: center;
+                font-size: 40px;
+        }
+
+        .naturemain h1 {
+                text-align: center;
+                font-size: 50px;
+
+        }
+
+        .naturemain p {
+                text-align: justify;
+                font-size: 20px;
+        }
+        
+        /*STYLES FOR FORM ELEMENTS*/
+
+        fieldset {
+                border: 2px solid orange;
+                border-radius: 30px;
+                background-color: #FFAE64;
+                padding: 0 30px;
+                height: 200px;
+        
+        
+        }
+
+        #form {
+                background-color: #FFE5CD;
+        }
+
+        #form h1 {
+                background-color: #FFE5CD;
+                padding-bottom: 30px;
+        }
+
+        form label {
+                font-family: "Barlow", serif;
+                font-weight: 500;
+                font-size: 30px;
+        }
+        fieldset, input, select, textarea {
+                margin-bottom: 2%;
+        
+        }
+
+        fieldset legend {
+                font-weight: bold;
+                font-size: 1.25em;
+        }
+
+        label {
+                display: block;
+                padding-top: 3%;
+        }
+
+
+
+        form #submit {
+                margin: 0 auto;
+                display: block;
+                padding: 300px;
+                background-color: #FFE5CD;
+                font-size: 1em;
+                border-radius: 10px;
+        }
+
+
+
+/*Tablet Viewport: Style rules for table*/
+        table {
+                border: 1px solid #000;
+                border-collapse: collapse;
+                margin: 0 auto;
+                width: 100%;
+        }
+
+        caption {
+                font-size: 1.5em;
+                font-weight: bold;
+                padding: 1%;
+        }
+
+        th, td {
+                border: 1px solid #000;
+                padding: 2%;
+        }
+
+        th {
+                background-color: #000;
+                color: #fff;
+                font-size: 1.15em;
+        }
+
+        tr:nth-child(odd) {
+                background-color: #ccc;
+        }
+
+/*STYLE FOR FORM*/
+        form {
+                width: 70%;
+                margin: 0 auto;
+        }
+
+/* Tablet Viewport: Animation */
+
+@-webkit-keyframes text-animation {
+        0% {font-size: 1em;}
+        50% {font-size: 2em;}
+        100% {font-size: 1.35em;}
+}
+        
+        @keyframes text-animation {
+        0% {font-size: 1em;}
+        50% {font-size: 2em;}
+        100% {font-size: 1.35em;}
+
+}
+
+figcaption {
+        -webkit-animation-name: text-animation;
+        animation-name: text-animation;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+        -webkit-animation-duration: 5s;
+        animation-duration: 5s;
+}
+
+/* Tablet Viewport: Main Content */
+        main {
+                clear: left;
+        }
+
+        main h1 {
+                font-size: 1.8em;
+        }
+
+        article h3 {
+                font-size: 1.75em;
+        }
+}
+/*===========================================================*/
+/*MEDIA QUERY FOR DESKTOP VIEWPORT*/
+@media screen and (min-width: 1280px), print{
+
+/*DESKTOP VIEWPORT: STYLE RULE FOR HEADER*/
+        header {
+                width: 25%;
+                float: left;
+                padding-bottom: 0;
+        }
+
+        header img {
+                padding-bottom: 20%;
+        }
+/*DESKTOP VIEWPORT: STYLE RULE FOR NAV AREA*/
+        nav {
+                float: right;
+                width: 70%;
+                margin: 4em 1em 0 0;
+                padding-bottom: 30px;
+
+        }
+
+        nav ul {
+                text-align: right;
+        }
+
+        nav li {
+                border: none;
+        }
+
+        nav li a {
+                padding: 0.5em 1em;
+                margin-bottom: 90px;
+                font-weight:700;
+        }
+
+        nav li a:hover {
+                color: #000;
+                background-color: #FFE5CD;
+                transform: scale(1.3);
+        }
+
+
+/*DESKTOP VIEWPORT: STYLE RULE FOR MAIN CONTENT AREA*/
+        
+
+        #intro {
+                padding: 1%; 
+                font-size: 200%;
+                text-align: none;
+                float: left;
+        }
+
+        #intro p {
+                text-align: justify;
+        }
+
+        
+
+        .cartooncat {
+                padding-left: 750px;
+                height: 350px;
+
+        }
+
+        .maincare h2 {
+                font-family: "Hepta Slab", serif;
+                text-align: center;
+                padding-top: 10px;
+                font-size: 45px;
+                margin: 0 0 10px 0
+        }
+        
+        .maincare p {
+                text-align: justify;
+                padding-bottom: 30px;
+                font-size: 20px;
+                margin: 30px 80px;
+                font-weight:450;
+        }
+
+        .carepic {
+                text-align: center;
+                width:9000px;
+                height:fit-content;
+                padding-left: 500px;
+                padding-right: 500px;
+        }
+
+        .carediv {
+                background-color: #FFAE64;
+                border-radius: 30px;
+
+        }
+
+
+        .carepichidden {
+                text-align: center;
+                width:9000px;
+                height:fit-content;
+                padding-left: 500px;
+                padding-right: 500px;
+
+        }
+
+        #careintro h1 {
+                clear: both;
+        }
+
+        #careintro p {
+                text-align: justify;
+                padding-bottom: 30px;
+                font-size: 20px;
+                margin: 30px 80px;
+                font-weight:450;
+        }
+
+        .breedpic {
+                margin-left: 450px;
+                min-width: auto;
+
+        }
+
+        #breedintro {
+                margin-bottom: 40px;
+                font-size: 100px;
+        }
+
+        #contact h1 {
+                clear: both;
+                text-align: center;
+                font-size: 60px; 
+    
+        }
+        
+        #contact p {
+                text-align: center;
+                font-size: 35px;
+                padding-top: 40px;
+        }
+
+        .gallerymain h1 {
+                clear: both;
+                text-align: center;
+                font-size: 60px;
+        }
+        
+        .gallerymain img {
+                clear: both;
+                width: 800px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 30px 30px;
+                max-height: 1000px;
+                border-radius: 50px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                background-color: #FFAE64;
+                
+        }
+        
+        #gpic1 {
+                background-color: #FFAE64;
+        }
+
+        .naturemain h1 {
+                clear: both;
+                text-align: center;
+                font-size: 50px;
+
+        }
+
+
+
+/*STYLE FOR FORM*/
+        form {
+                width: auto;
+        }
+
+        .form-grid {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-gap: 20px;
+        }
+
+        .btn {
+                grid-column: 1 /span 3;
+        }
+}
+
+/*===========================================================*/
+/*MEDIA QUERY FOR LARGE DESKTOP VIEWPORT*/
+@media screen and (min-width: 1921px) {
+        #container {
+                width: 1920px;
+                margin: 0 auto;
+        }
+
+        table {
+                width: 80%;
+        }
+}
+/*===========================================================*/
+/*MEDIA QUERY FOR PRINT*/
+@media print {
+        body {
+                background-color: #fff;
+                color: #000;
+        }
+}
